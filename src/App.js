@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./Home";
+import HowItWorks from "./HowItWorks";
 
 function App() {
   return (
@@ -21,22 +22,6 @@ function App() {
         </Route>
       </Switch>
     </Router>
-  );
-}
-
-// function Home() {
-//   return (
-//     <div>
-//       <h2>Home</h2>
-//     </div>
-//   );
-// }
-
-function HowItWorks() {
-  return (
-    <div>
-      <h2>How-It-Works</h2>
-    </div>
   );
 }
 

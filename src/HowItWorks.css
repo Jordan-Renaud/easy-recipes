@@ -1,0 +1,15 @@
+.HowItWorks {
+  text-align: center;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+.HowItWorks .title {
+  font-size: 15rem;
+  margin: 0;
+  font-weight: 100;
+}
+
+.HowItWorks p {
+  padding: 1rem;
+  font-size: 2rem;
+}
