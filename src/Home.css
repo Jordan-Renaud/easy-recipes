@@ -1,0 +1,27 @@
+.Home {
+  text-align: center;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+.Home .title {
+  font-size: 15rem;
+  margin: 0;
+  font-weight: 100;
+}
+
+.Home .subheading {
+  font-weight: 100;
+}
+
+.Home header {
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.Home .recipe-image {
+  border-radius: 15px;
+}
+
+.Home .recipe-image:hover {
+  opacity: 0.9;
+}
