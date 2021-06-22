@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+.App .title {
+  font-size: 15rem;
+  margin: 0;
+  font-weight: 100;
+}
+
+.App .subheading {
+  font-weight: 100;
+}
+
+.App header {
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.App button {
+  height: 50px;
+  width: 50px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+
+.App #home {
+  background-image: url(./images/home.png);
+}
+
+.App #home:hover {
+  background-image: url(./images/home-hover.png);
+  cursor: pointer;
+}
+
+.App #help {
+  background-image: url(./images/help.png);
+}
+
+.App #help:hover {
+  background-image: url(./images/help-hover.png);
+  cursor: pointer;
+}
