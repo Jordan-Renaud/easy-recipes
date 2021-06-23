@@ -1,4 +1,5 @@
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -6,9 +7,9 @@ function Home() {
       <h1 className="title">Easy Recipes</h1>
       <h2 className="subheading">finding recipes doesn't have to be hard</h2>
       <div className="recipes">
-        <a href="#">
+        <Link to="/recipe/rice-bowl">
           <img className="recipe-image" src="https://picsum.photos/300/300" />
-        </a>
+        </Link>
       </div>
     </div>
   );
