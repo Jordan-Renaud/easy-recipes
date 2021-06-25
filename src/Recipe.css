@@ -1,0 +1,27 @@
+.Recipe {
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+.Recipe h1 {
+  display: inline-block;
+  font-size: 15rem;
+  margin: 0;
+  font-weight: 100;
+}
+
+.Recipe img {
+  display: inline-block;
+  border-radius: 15px;
+}
+
+.Recipe .flex-container {
+  display: inline-flex;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+
+.Recipe h2 {
+  font-size: 5rem;
+  margin: 0;
+  font-weight: 100;
+}
