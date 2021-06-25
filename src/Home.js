@@ -1,16 +1,27 @@
 import "./Home.css";
-import { Link } from "react-router-dom";
+import Flicking from "@egjs/react-flicking";
+import "@egjs/react-flicking/dist/flicking.css";
+
+import { recipes } from "./data";
+import ImageLink from "./ImageLink";
 
 function Home() {
   return (
     <div className="Home">
       <h1 className="title">Easy Recipes</h1>
       <h2 className="subheading">finding recipes doesn't have to be hard</h2>
-      <div className="recipes">
-        <Link to="/recipe/rice-bowl">
-          <img className="recipe-image" src="https://picsum.photos/300/300" />
-        </Link>
-      </div>
+
+      <Flicking align="prev" circular={true}>
+        <div className="image-grid">
+          {Object.keys(recipes).map((recipe) => (
+            <ImageLink
+              key={recipe}
+              recipeName={recipe}
+              recipeImage={recipes[recipe].image}
+            />
+          ))}
+        </div>
+      </Flicking>
     </div>
   );
 }
