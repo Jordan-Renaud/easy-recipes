@@ -12,12 +12,17 @@
 .Recipe img {
   display: inline-block;
   border-radius: 15px;
+  margin-left: 4rem;
 }
 
 .Recipe .flex-container {
   display: inline-flex;
   justify-content: space-evenly;
   width: 100vw;
+}
+
+.Recipe .select-box {
+  width: 10vw;
 }
 
 .Recipe h2 {

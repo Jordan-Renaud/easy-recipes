@@ -2,9 +2,24 @@ export const recipes = {
   "rice-bowl": {
     title: "Rice Bowl",
     image: "https://picsum.photos/500/500",
-    proteins: ["chicken", "beef", "tofu", "edamame"],
-    vegetables: ["corn", "carrot", "peas", "cabbage", "raddish"],
-    starchs: ["basmati", "sushi rice", "quinoa"],
+    proteins: [
+      { label: "chicken", value: "chicken" },
+      { label: "beef", value: "beef" },
+      { label: "tofu", value: "tofu" },
+      { label: "edamame", value: "edamame" },
+    ],
+    vegetables: [
+      { label: "corn", value: "corn" },
+      { label: "carrot", value: "carrot" },
+      { label: "peas", value: "peas" },
+      { label: "cabbage", value: "cabbage" },
+      { label: "raddish", value: "raddish" },
+    ],
+    starchs: [
+      { label: "basmati", value: "basmati" },
+      { label: "sushi rice", value: "sushi rice" },
+      { label: "quinoa", value: "quinoa" },
+    ],
     ingredients: ["soy sauce", "coriander", "brown sugar", "garlic"],
     steps: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
