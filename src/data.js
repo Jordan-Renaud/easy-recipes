@@ -32,7 +32,7 @@ export const recipes = {
   },
   spaghetti: {
     title: "Spaghetti",
-    image: "https://picsum.photos/400/500",
+    image: "https://picsum.photos/500/500",
     proteins: ["chicken", "beef", "tofu", "edamame"],
     vegetables: ["corn", "carrot", "peas", "cabbage", "raddish"],
     starchs: ["basmati", "sushi rice", "quinoa"],
@@ -48,7 +48,7 @@ export const recipes = {
   },
   burritos: {
     title: "Burritos",
-    image: "https://picsum.photos/400/400",
+    image: "https://picsum.photos/500/500",
     proteins: ["chicken", "beef", "tofu", "edamame"],
     vegetables: ["corn", "carrot", "peas", "cabbage", "raddish"],
     starchs: ["basmati", "sushi rice", "quinoa"],
@@ -64,7 +64,7 @@ export const recipes = {
   },
   pizza: {
     title: "Pizza",
-    image: "https://picsum.photos/300/400",
+    image: "https://picsum.photos/500/500",
     proteins: ["chicken", "beef", "tofu", "edamame"],
     vegetables: ["corn", "carrot", "peas", "cabbage", "raddish"],
     starchs: ["basmati", "sushi rice", "quinoa"],
@@ -80,7 +80,7 @@ export const recipes = {
   },
   ramen: {
     title: "Ramen",
-    image: "https://picsum.photos/400/450",
+    image: "https://picsum.photos/500/500",
     proteins: ["chicken", "beef", "tofu", "edamame"],
     vegetables: ["corn", "carrot", "peas", "cabbage", "raddish"],
     starchs: ["basmati", "sushi rice", "quinoa"],
@@ -96,7 +96,7 @@ export const recipes = {
   },
   stirfry: {
     title: "Stirfry",
-    image: "https://picsum.photos/400/300",
+    image: "https://picsum.photos/500/500",
     proteins: ["chicken", "beef", "tofu", "edamame"],
     vegetables: ["corn", "carrot", "peas", "cabbage", "raddish"],
     starchs: ["basmati", "sushi rice", "quinoa"],
