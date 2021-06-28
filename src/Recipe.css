@@ -5,24 +5,39 @@
 .Recipe h1 {
   display: inline-block;
   font-size: 15rem;
-  margin: 0;
+  line-height: 12rem;
+  margin: 0 0 0 35vw;
   font-weight: 100;
 }
 
 .Recipe img {
-  display: inline-block;
+  position: absolute;
+  width: 30vw;
+  height: 80vh;
   border-radius: 15px;
-  margin-left: 4rem;
+  margin-left: 2rem;
 }
 
 .Recipe .flex-container {
-  display: inline-flex;
-  justify-content: space-evenly;
-  width: 100vw;
+  display: flex;
+  margin-top: 5rem;
+  margin-left: 35vw;
+  justify-content: space-between;
+  width: 48vw;
+}
+
+.Recipe .food-component {
+  padding-right: 5vw;
+}
+
+.Recipe h3 {
+  font-size: 2rem;
+  font-weight: 100;
+  margin: 0;
 }
 
 .Recipe .select-box {
-  width: 10vw;
+  width: 12rem;
 }
 
 .Recipe h2 {

@@ -8,43 +8,45 @@ export default function Recipe() {
   let { id } = useParams();
   console.log(id);
 
-  const [selected, setSelected] = useState([]);
+  const [protein, setProtein] = useState([]);
+  const [vegetable, setVegetable] = useState([]);
+  const [starch, setStarch] = useState([]);
 
   return (
     <div className="Recipe">
       <img src={recipes[id].image} alt={recipes[id]} />
       <h1>{recipes[id].title}</h1>
       <div className="flex-container">
-        <div>
+        <div className="food-component">
           <h3>proteins</h3>
           <div className="select-box">
             <MultiSelect
               options={recipes[id].proteins}
-              value={selected}
-              onChange={setSelected}
-              labelledBy="Select"
+              value={protein}
+              onChange={setProtein}
+              labelledBy="Proteins"
             />
           </div>
         </div>
-        <div>
+        <div className="food-component">
           <h3>vegetables</h3>
           <div className="select-box">
             <MultiSelect
               options={recipes[id].vegetables}
-              value={selected}
-              onChange={setSelected}
-              labelledBy="Select"
+              value={vegetable}
+              onChange={setVegetable}
+              labelledBy="Vegetables"
             />
           </div>
         </div>
-        <div>
-          <h3>starchs</h3>
+        <div className="food-component">
+          <h3>starches</h3>
           <div className="select-box">
             <MultiSelect
               options={recipes[id].starchs}
-              value={selected}
-              onChange={setSelected}
-              labelledBy="Select"
+              value={starch}
+              onChange={setStarch}
+              labelledBy="Starches"
             />
           </div>
         </div>
