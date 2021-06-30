@@ -12,6 +12,51 @@ export default function Recipe() {
   const [vegetable, setVegetable] = useState([]);
   const [starch, setStarch] = useState([]);
 
+  const [addedProtein, setAddedProtein] = useState([]);
+  const [addedVegetable, setAddedVegetable] = useState([]);
+  const [addedStarch, setAddedStarch] = useState([]);
+
+  function updateIngredients(type, food) {
+    console.log(food);
+    console.log(type);
+
+    if (type === "proteins") {
+      setProtein(food);
+      let newProteins = [];
+      food.forEach((item) => {
+        if (!newProteins.includes(item.label)) {
+          newProteins.push(item.label);
+        }
+      });
+      setAddedProtein(newProteins);
+    } else if (type === "vegetables") {
+      setVegetable(food);
+      let newVegetables = [];
+      food.forEach((item) => {
+        if (!newVegetables.includes(item.label)) {
+          newVegetables.push(item.label);
+        }
+      });
+      setAddedVegetable(newVegetables);
+    } else if (type === "starches") {
+      setStarch(food);
+      let newStarches = [];
+      food.forEach((item) => {
+        if (!newStarches.includes(item.label)) {
+          newStarches.push(item.label);
+        }
+      });
+      setAddedStarch(newStarches);
+    }
+  }
+
+  const allIngredients = [
+    ...recipes[id].ingredients,
+    ...addedProtein,
+    ...addedVegetable,
+    ...addedStarch,
+  ];
+
   return (
     <div className="Recipe">
       <img src={recipes[id].image} alt={recipes[id]} />
@@ -23,7 +68,7 @@ export default function Recipe() {
             <MultiSelect
               options={recipes[id].proteins}
               value={protein}
-              onChange={setProtein}
+              onChange={(food) => updateIngredients("proteins", food)}
               labelledBy="Proteins"
             />
           </div>
@@ -34,7 +79,7 @@ export default function Recipe() {
             <MultiSelect
               options={recipes[id].vegetables}
               value={vegetable}
-              onChange={setVegetable}
+              onChange={(food) => updateIngredients("vegetables", food)}
               labelledBy="Vegetables"
             />
           </div>
@@ -45,7 +90,7 @@ export default function Recipe() {
             <MultiSelect
               options={recipes[id].starchs}
               value={starch}
-              onChange={setStarch}
+              onChange={(food) => updateIngredients("starches", food)}
               labelledBy="Starches"
             />
           </div>
@@ -54,7 +99,7 @@ export default function Recipe() {
       <div className="flex-container">
         <div>
           <h2>ingredients</h2>
-          {recipes[id].ingredients.map((ingredient) => (
+          {allIngredients.map((ingredient) => (
             <div key={ingredient}>
               <input type="checkbox" name={ingredient} />
               <label htmlFor={ingredient}>{ingredient}</label>
