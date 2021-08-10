@@ -17,9 +17,6 @@ export default function Recipe() {
   const [addedStarch, setAddedStarch] = useState([]);
 
   function updateIngredients(type, food) {
-    console.log(food);
-    console.log(type);
-
     if (type === "proteins") {
       setProtein(food);
       let newProteins = [];
@@ -59,7 +56,7 @@ export default function Recipe() {
 
   return (
     <div className="Recipe">
-      <img src={recipes[id].image} alt={recipes[id]} />
+      <img src={process.env.PUBLIC_URL + recipes[id].image} alt={recipes[id]} />
       <h1>{recipes[id].title}</h1>
       <div className="flex-container">
         <div className="food-component">
