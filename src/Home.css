@@ -22,7 +22,7 @@
 .container {
   display: grid;
   height: 50vh;
-  width: 100vw;
+  width: calc(100vw - 1rem);
   grid-template-columns: 24% 24% 16% 16% 16%;
   grid-template-rows: repeat(3, minmax(100px, 1fr));
   gap: 1rem;
@@ -31,6 +31,8 @@
     "large-square large-square medium-rectangle medium-square medium-square"
     "large-square large-square medium-rectangle-2 medium-square medium-square"
     "large-square large-square large-rectangle large-rectangle small-square";
+
+  margin-left: 1rem;
 }
 
 .large-square {
