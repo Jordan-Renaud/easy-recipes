@@ -45,3 +45,60 @@
   margin: 0;
   font-weight: 100;
 }
+
+@media screen and (max-width: 640px) {
+  .Recipe img {
+    position: static;
+    margin: 0 1vw;
+    width: 98vw;
+    height: 10rem;
+    object-fit: cover;
+  }
+
+  .Recipe h1 {
+    margin: 0.5rem 0;
+    font-size: 6rem;
+    text-align: center;
+    line-height: 1;
+    width: 100%;
+  }
+
+  .Recipe h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 1.5rem 0 1rem 0;
+  }
+
+  .Recipe .flex-container {
+    flex-direction: column;
+    margin: 0 1vw;
+    width: 98vw;
+  }
+
+  .Recipe .food-component {
+    margin: 0.5rem auto;
+  }
+
+  .Recipe .select-box {
+    width: 80vw;
+  }
+
+  .Recipe h3 {
+    font-size: 1.5rem;
+  }
+
+  .Recipe .ingredient {
+    display: flex;
+    align-items: center;
+    margin: 0.2rem;
+  }
+
+  .Recipe .ingredient label {
+    font-size: 1.1rem;
+  }
+
+  .Recipe .flex-container input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

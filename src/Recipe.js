@@ -56,7 +56,10 @@ export default function Recipe() {
 
   return (
     <div className="Recipe">
-      <img src={process.env.PUBLIC_URL + recipes[id].image} alt={recipes[id]} />
+      <img
+        src={process.env.PUBLIC_URL + recipes[id].image}
+        alt={recipes[id].title}
+      />
       <h1>{recipes[id].title}</h1>
       <div className="flex-container">
         <div className="food-component">
@@ -97,7 +100,7 @@ export default function Recipe() {
         <div>
           <h2>ingredients</h2>
           {allIngredients.map((ingredient) => (
-            <div key={ingredient}>
+            <div className="ingredient" key={ingredient}>
               <input type="checkbox" name={ingredient} />
               <label htmlFor={ingredient}>{ingredient}</label>
             </div>
