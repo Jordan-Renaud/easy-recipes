@@ -27,6 +27,15 @@
   width: 48vw;
 }
 
+.Recipe .flex-child {
+  flex: 1;
+}
+
+.Recipe ol {
+  margin-right: 1rem;
+  padding-left: 1rem;
+}
+
 .Recipe .food-component {
   padding-right: 5vw;
 }
@@ -138,9 +147,5 @@
   .Recipe .flex-container input[type="checkbox"] {
     width: 1.5rem;
     height: 1.5rem;
-  }
-
-  .Recipe ol {
-    margin-right: 1rem;
   }
 }
