@@ -66,7 +66,10 @@ export default function Recipe() {
           <h3>proteins</h3>
           <div className="select-box">
             <MultiSelect
-              options={recipes[id].proteins}
+              options={recipes[id].proteins.map((x) => ({
+                label: x,
+                value: x,
+              }))}
               value={protein}
               onChange={(food) => updateIngredients("proteins", food)}
               labelledBy="Proteins"
@@ -77,7 +80,10 @@ export default function Recipe() {
           <h3>vegetables</h3>
           <div className="select-box">
             <MultiSelect
-              options={recipes[id].vegetables}
+              options={recipes[id].vegetables.map((x) => ({
+                label: x,
+                value: x,
+              }))}
               value={vegetable}
               onChange={(food) => updateIngredients("vegetables", food)}
               labelledBy="Vegetables"
@@ -88,7 +94,10 @@ export default function Recipe() {
           <h3>starches</h3>
           <div className="select-box">
             <MultiSelect
-              options={recipes[id].starchs}
+              options={recipes[id].starchs.map((x) => ({
+                label: x,
+                value: x,
+              }))}
               value={starch}
               onChange={(food) => updateIngredients("starches", food)}
               labelledBy="Starches"
