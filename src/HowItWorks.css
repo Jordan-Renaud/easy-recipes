@@ -13,3 +13,14 @@
   padding: 1rem;
   font-size: 2rem;
 }
+
+@media screen and (max-width: 640px) {
+  .HowItWorks .title {
+    font-size: 6rem;
+  }
+
+  .HowItWorks p {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+}
