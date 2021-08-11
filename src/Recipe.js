@@ -99,12 +99,14 @@ export default function Recipe() {
       <div className="flex-container">
         <div>
           <h2>ingredients</h2>
-          {allIngredients.map((ingredient) => (
-            <div className="ingredient" key={ingredient}>
-              <input type="checkbox" name={ingredient} />
-              <label htmlFor={ingredient}>{ingredient}</label>
-            </div>
-          ))}
+          <div className="ingredient-list">
+            {allIngredients.map((ingredient) => (
+              <div className="ingredient" key={ingredient}>
+                <input type="checkbox" name={ingredient} />
+                <label htmlFor={ingredient}>{ingredient}</label>
+              </div>
+            ))}
+          </div>
         </div>
         <div>
           <h2>steps</h2>
