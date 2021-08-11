@@ -1,5 +1,4 @@
 import "./Home.css";
-import Carousel from "nuka-carousel";
 
 import { recipes } from "./data";
 import ImageLink from "./ImageLink";

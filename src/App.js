@@ -27,6 +27,16 @@ function App() {
           <Recipe />
         </Route>
       </Switch>
+
+      <footer>
+        <a
+          href="https://jordan-renaud.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          made by Jordan Renaud
+        </a>
+      </footer>
     </Router>
   );
 }
