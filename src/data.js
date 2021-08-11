@@ -33,7 +33,7 @@ export const recipes = {
     steps: [
       "Put you chosen starch on to cook, once done put to the side.",
       "Mix soy sauce, brown sugar, water in a pot and bring to the boil.",
-      "Let simmer for 3mins, mix in crushed garlic and cornflower, stir until mixed, put to the side.",
+      "Let simmer for 3mins, mix in crushed garlic and cornflour, stir until mixed, put to the side.",
       "Cook your chosen protein, once done, toss in sauce.",
       "Prepare vegetables, and mix with mayo (to your taste), lemon, vinegar, salt and pepper.",
       "Assemble components and sprinkle with chopped coriander.",
