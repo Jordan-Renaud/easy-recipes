@@ -46,6 +46,11 @@
   font-weight: 100;
 }
 
+.Recipe .ingredient-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 @media screen and (max-width: 640px) {
   .Recipe img {
     position: static;
