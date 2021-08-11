@@ -64,7 +64,7 @@ export const recipes = {
   },
   "butter-chicken": {
     title: "Butter Chicken",
-    image: "/images/butter-chicken.jpg",
+    image: "/images/butter-chicken.jpeg",
     proteins: [
       "chicken",
       "meat-free chicken bites",
@@ -107,7 +107,7 @@ export const recipes = {
   },
   stirfry: {
     title: "Sticky Chilli Stirfry",
-    image: "/images/stirfry.jpg",
+    image: "/images/stirfry.jpeg",
     proteins: ["beef", "tofu", "pork", "meat-free mince"],
     vegetables: [
       "baby corn",
@@ -140,7 +140,7 @@ export const recipes = {
   },
   tandoori: {
     title: "Tandoori Salad",
-    image: "/images/tandoori-salad.jpg",
+    image: "/images/tandoori-salad.jpeg",
     proteins: ["white fish", "tofu", "vegetarian fish alternative"],
     vegetables: ["corn", "peas", "raddish", "cucumber", "tomato"],
     starchs: ["basmati", "bulgar wheat", "quinoa", "long grain rice"],
@@ -164,7 +164,7 @@ export const recipes = {
   },
   burger: {
     title: "Burger",
-    image: "/images/burger.jpg",
+    image: "/images/burger.jpeg",
     proteins: ["chicken", "beef", "tofu", "edamame"],
     vegetables: ["corn", "carrot", "peas", "cabbage", "raddish"],
     starchs: ["basmati", "sushi rice", "quinoa"],
