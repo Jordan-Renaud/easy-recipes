@@ -1,3 +1,9 @@
+.main {
+  position: relative;
+  min-height: calc(100vh - 3rem);
+  padding-bottom: 3rem;
+}
+
 .App header {
   text-align: right;
 }
@@ -28,12 +34,12 @@
 }
 
 footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 1rem;
   text-align: center;
+  padding: 1rem;
 }
 
 footer a {

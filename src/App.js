@@ -7,37 +7,39 @@ import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <div className="App">
-        <header>
-          <Link className="link" id="home" to="/"></Link>
-          <Link className="link" id="help" to="/how-it-works"></Link>
-        </header>
-      </div>
+    <div className="main">
+      <Router>
+        <ScrollToTop />
+        <div className="App">
+          <header>
+            <Link className="link" id="home" to="/"></Link>
+            <Link className="link" id="help" to="/how-it-works"></Link>
+          </header>
+        </div>
 
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/how-it-works">
-          <HowItWorks />
-        </Route>
-        <Route path="/recipe/:id">
-          <Recipe />
-        </Route>
-      </Switch>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/how-it-works">
+            <HowItWorks />
+          </Route>
+          <Route path="/recipe/:id">
+            <Recipe />
+          </Route>
+        </Switch>
 
-      <footer>
-        <a
-          href="https://jordan-renaud.netlify.app/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          made by Jordan Renaud
-        </a>
-      </footer>
-    </Router>
+        <footer>
+          <a
+            href="https://jordan-renaud.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            made by Jordan Renaud
+          </a>
+        </footer>
+      </Router>
+    </div>
   );
 }
 

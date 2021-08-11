@@ -12,6 +12,7 @@
 
 .Recipe img {
   position: absolute;
+  object-fit: cover;
   width: 30vw;
   height: 80vh;
   border-radius: 15px;
@@ -49,6 +50,37 @@
 .Recipe .ingredient-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 1367px) and (min-width: 641px) {
+  .Recipe {
+    padding: 0 1rem;
+  }
+
+  .Recipe img {
+    height: 30vh;
+    width: 35vh;
+  }
+
+  .Recipe h1 {
+    font-size: 10rem;
+    line-height: 10rem;
+    margin-left: 52vw;
+  }
+
+  .Recipe .flex-container {
+    margin: 0;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .Recipe .flex-child {
+    flex: 1;
+  }
+
+  .Recipe .food-component {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 640px) {

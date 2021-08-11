@@ -97,7 +97,7 @@ export default function Recipe() {
         </div>
       </div>
       <div className="flex-container">
-        <div>
+        <div className="flex-child">
           <h2>ingredients</h2>
           <div className="ingredient-list">
             {allIngredients.map((ingredient) => (
@@ -108,7 +108,7 @@ export default function Recipe() {
             ))}
           </div>
         </div>
-        <div>
+        <div className="flex-child">
           <h2>steps</h2>
           <ol>
             {recipes[id].steps.map((step, index) => (
