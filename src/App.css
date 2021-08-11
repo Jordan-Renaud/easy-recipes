@@ -26,3 +26,25 @@
 .App #help:hover {
   background-image: url(./images/help-hover.png);
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a {
+  font-family: "PT Sans Narrow", sans-serif;
+  color: black;
+}
+
+@media screen and (max-width: 640px) {
+  footer {
+    position: static;
+    padding: 0.5rem;
+    text-align: center;
+  }
+}
