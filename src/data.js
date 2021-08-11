@@ -113,8 +113,15 @@ export const recipes = {
     ],
     steps: [
       "Cook the starch",
-      "Prepare garlic and spices",
+      "Peel and finely chop garlic and ginger",
       "Chop your vegetables",
+      "Soften onion and tomato in a pan if you're using them",
+      "Add garlic, ginger, curry powder and paprika to the pan",
+      "Add your remaning vegetables after a few minutes",
+      "Dissolve coconut cream, tomato paste and vegetable stock in some boiled water",
+      "Add stock and soya cream to the pan. This is your sauce.",
+      "Fry protein an another pan and when ready, add to the sauce",
+      "Serve on top of you starch of choice",
     ],
   },
   pizza: {
